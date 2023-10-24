@@ -16,12 +16,19 @@
   }
 }
 
+
+html, body {
+  height: 100%; /* Ensure full height coverage */
+  margin: 0;    /* Reset default margins */
+  padding: 0;   /* Reset default paddings */
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
+      rgb(var(--background-start-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-end-rgb));
 }
