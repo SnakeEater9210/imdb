@@ -7,7 +7,7 @@ const getRandomInt = (min, max) => {
 
 export default function ColorBox({ colors }) {
    const [singleColor, setSingleColor] = useState(colors[getRandomInt(0, colors.length - 1)]);
-  
+
   const changeColor = () => {
     setSingleColor(colors[getRandomInt(0, colors.length - 1)])
   }
@@ -19,5 +19,3 @@ export default function ColorBox({ colors }) {
     </div>
   );
 }
-
-
