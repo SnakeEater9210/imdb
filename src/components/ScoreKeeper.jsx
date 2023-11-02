@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { v4 as uuid } from "uuid";
 import Player from "./Player";
 
-export default function ScoreKeeper({numPlayers=10, target=10}) {
+export default function ScoreKeeper({numPlayers=10, target=5}) {
   const [players, setPlayers] = useState(
     new Array(numPlayers).fill().map(() => ({ id: uuid(), score: 0 }))
   );

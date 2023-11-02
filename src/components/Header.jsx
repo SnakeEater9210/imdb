@@ -16,6 +16,10 @@ import Toggler from "./Toggler";
 import ColorGrid from "./ColorGrid";
 import ScoreKeeper from "./ScoreKeeper";
 import AddEmoji from "./AddEmoji";
+// import Lucky7 from "./Lucky7";
+import Die from "./Die";
+import Dice from "./Dice";
+import LuckyN from "./LuckyN";
 
 const properties = [
     { id: 129031, name: "Desert Yurt", rating: 4.9, price: 150 },
@@ -76,8 +80,11 @@ export default function Header() {
       {/* <Counter/>
       <Toggler />
       <ColorGrid colors={colors}/> */}
-      <ScoreKeeper numPlayers = {4}/>
+      {/* <ScoreKeeper numPlayers = {4}/> */}
       {/* <AddEmoji /> */}
+      {/* <Lucky7 /> */}
+      <LuckyN numDice={2}/>
+      {/* <Die val={2}/> */}
 
 
     </div>
